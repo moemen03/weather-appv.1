@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./assets/images/user-ninja-solid.svg" />
+
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <section id="main">
+      <div class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container">
+            <a class="navbar-brand text-white" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Live cameras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Photos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
+      <div id="forecast-section">
+        <div class="container pt-5 pb-5">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1 id="city" class="city">cairo</h1>
+            <h4 class="city warning fs-5 d-none">invalid city</h4>
+            <input type="text" class="mb-4 w-75 location" placeholder="Find your location..." id="search">
+
+            <div class="w-100">
+              <div class="cards">
+                <div class="card today">
+
+                  <div class="date">
+                    <h5 id="todayName">sunday</h5>
+                    <h5 id="todayDate">21August</h5>
+                  </div>
+
+                  <div class="degree">
+                    <h5>Today</h5>
+                    <h1 id="todayDegree" class="today"></h1>
+                    <div class="d-flex justify-content-around">
+                      <h5 id="todayCondition"></h5>
+                      <img src="" alt="" id="todayDegreeIcon">
+                    </div>
+                  </div>
+
+                  <div id="moreInfo" class="moreinfo">
+                    <span><i class="fa-solid fa-water"></i></span>
+                    <span><i class="fa-solid fa-wind"></i></span>
+                    <span><i class="fa-solid fa-cloud-rain"></i></span>
+                  </div>
+
+                </div>
+                
+                <div class="card">
+                  <div class="date">
+                      <h5 id="dayName1"></h5>
+                      <h5 id="dayDate1"></h5>
+                  </div>
+                  <div class="degree">
+                      <img id="degreeIcon1"></img>
+                      <h1 id="avgdegree1"></h1>
+                  </div>
+                  <div id="moreinfo1" class="moreinfo">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="date">
+                      <h5 id="dayName2"></h5>
+                      <h5 id="dayDate2"></h5>
+                  </div>
+                  <div class="degree">
+                      <img id="degreeIcon2"></img>
+                      <h1 id="avgdegree2"></h1>
+                  </div>
+                  <div id="moreinfo2" class="moreinfo">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="container pt-5">
+					<div class="row">
+						<div class="col-md-8">
+							<form action="#" class="subscribe-form">
+								<input type="text" placeholder="Enter your email to subscribe...">
+								<input type="submit" value="Subscribe">
+							</form>
+						</div>
+						<div class="col-md-3 col-md-offset-1">
+							<div class="social-links">
+								<a href="#"><i class="fa-brands fa-facebook"></i></a>
+								<a href="#"><i class="fa-brands fa-twitter"></i></a>
+								<a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+								<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<p class="colophon text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+				</div>
+      </div>
+    </section>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

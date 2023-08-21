@@ -1,0 +1,269 @@
+
+nav{
+    
+    background-color: #1E202B;
+    color: #fff !important;
+}
+nav.navbar.navbar-expand-lg.fixed-top {
+    padding: 30px 0px !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 5px 25px;
+}
+
+.navbar-nav li:hover{
+    border: 2px #009ad8 !important;
+}
+
+
+
+/* -------- forecast container---------- */
+
+#forecast-section{
+    margin-top: 100px;
+    background-image: url('../images/banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.city {
+    width: fit-content;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.321);
+    border: 1px solid rgba(255, 255, 255, 0.402);
+    border-radius: 20px;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.location {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.186);
+    border: 1px solid rgba(255, 255, 255, 0.402);
+    border-radius: 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.486);
+    font-size: 1.2rem;
+}
+  
+
+  
+  
+.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+  
+  .cards .card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 18.75rem;
+    width: 33.3333%;
+    border-radius: 10px;
+    color: white;
+    transition: 400ms;
+    background-color: rgba(0, 0, 0, 0.186);
+    border: 1px solid rgba(255, 255, 255, 0.402);
+    backdrop-filter: blur(20px);
+    border-radius: .7rem;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: 0px 0px 20px 1px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+  }
+  
+  .cards:hover>.card:not(:hover) {
+    filter: blur(5px);
+    transform: scale(0.95, 0.95);
+  }
+  
+  .date {
+    margin-top: .625rem;
+    display: flex;
+    justify-content: space-between;
+    padding: .9375rem;
+  }
+  
+  .date h5 {
+    padding: 0 5px;
+    margin-bottom: 0;
+  }
+  
+  .degree {
+    padding: .625rem;
+  }
+  
+  .degree .today {
+    font-size: 3.5rem;
+    padding-top: 0;
+  }
+  
+  .degree h1 {
+    font-size: 2.5rem;
+    padding-top: .625rem;
+  }
+  
+  .degree img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .today .moreinfo{
+    margin-top: 0.85rem;
+  }
+  .moreinfo {
+    margin-top: 1.875rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .moreinfo span{
+    padding: 10px;
+  }
+  .moreinfo i {
+    padding: 0 .625rem;
+  }
+
+
+
+
+  /* footer */
+
+#footer{
+    background: #262936;
+    padding: 50px 0;
+}
+
+.subscribe-form input[type="text"] {
+    padding: 20px 100px 20px 20px;
+    background: #1e202b;
+    width: 100%;
+    color: white;
+}
+form input {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.subscribe-form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.subscribe-form input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+}
+
+form input[type="submit"], form input[type="button"], form button, form input[type="reset"] {
+    border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+    margin-left:25px;
+}
+.social-links li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50% -50%);
+}
+.social-links a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    /* line-height: 2; */
+    transition: 0.3s ease;
+    font-size: 20px;
+    font-size: 1.4285714286em;
+
+}
+
+
+/* contact */
+
+.main-content{
+    background-color: #1E202B;
+    margin-top: 100px;
+}
+.back {
+    background: #262936;
+    border-radius: 40px;
+    padding: 20px 30px;
+    font-size: 13px;
+    font-size: 0.9285714286em;
+}
+
+.fullwidth-block {
+    padding: 70px 0;
+}
+
+.fullwidth-block .section-title {
+    font-size: 36px;
+    font-size: 2.5714285714em;
+    font-weight: 300;
+    color: white;
+}
+.contact-form input:not([type="submit"]), .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    border: 2px solid #393c48;
+    background: transparent;
+}
+.contact-form textarea {
+    width: 100%;
+    min-height: 180px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    border: 2px solid #393c48;
+    background: transparent;
+}
+
+.contact-form .text-right {
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+  @media (max-width: 991.98px) {
+    #cards{
+        flex-direction: column;
+    }
+    .card {
+        align-items: center;
+        justify-content: center;
+        height: 21rem !important;
+        margin: auto;
+        width: 100%;
+    }
+}
